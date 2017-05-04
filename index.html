@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Video.js hls.js</title>
+    <link href="http://vjs.zencdn.net/5.10.7/video-js.css" rel="stylesheet">
+</head>
+<body>
+    <video id="video" class="video-js vjs-default-skin" width="640" height="360" autoplay controls>
+        <source src="http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8" type="application/x-mpegURL"/>
+    </video>
+    <script src="http://vjs.zencdn.net/5.10.7/video.js"></script>
+    <script src="js/hls.min.js"></script>
+    <script src="js/vjs-hls.min.js"></script>
+    <script>
+        var player = videojs('video');
+
+        player.qualityPickerPlugin();
+    </script>
+</body>
+</html>
