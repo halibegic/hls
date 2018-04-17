@@ -4,25 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Video.js + hls.js</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"><!-- https://getbootstrap.com -->
     <link href="https://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet"><!-- https://videojs.com -->
     <style type="text/css">
-        body {
-            background-color: #f2f2f2;
-        }
         .video-js {
-            font-size: 14px;
+            font-size: 1rem;
         }
     </style>
   </head>
-  <body>
+  <body class="bg-light">
     <div class="container">
-        <div class="mt-3 embed-responsive embed-responsive-16by9">
+        <div class="my-5 embed-responsive embed-responsive-16by9">
             <video id="video" class="embed-responsive-item video-js vjs-default-skin" width="640" height="360" autoplay controls>
                 <source src="bbb/playlist.m3u8" type="application/x-mpegURL"/>
             </video>
         </div>
-        <a class="mt-3 d-block text-center" href="https://github.com/halibegic/hls" target="blank">GitHub</a>
+        <a class="btn btn-link" href="https://github.com/halibegic/hls" target="blank">GitHub</a>
     </div>
     <script src="https://vjs.zencdn.net/5.19.2/video.js"></script><!-- https://videojs.com -->
     <script src="js/hls.min.js?v=v0.9.1"></script><!-- https://github.com/video-dev/hls.js -->
