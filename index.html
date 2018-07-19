@@ -27,13 +27,15 @@
     <script src="js/vjs-quality-picker.js?v=v0.0.2"></script><!-- https://github.com/streamroot/videojs-quality-picker -->
     <script>
         var player = videojs('video');
+
+        player.qualityPickerPlugin();
         
         player.src({
-            src: 'bbb/playlist.m3u8',
+            src: 'https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8',
             type: 'application/x-mpegURL'
         });
 
-        player.qualityPickerPlugin();
+        player.play();
     </script>
   </body>
 </html>
